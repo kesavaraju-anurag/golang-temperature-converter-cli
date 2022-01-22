@@ -35,7 +35,7 @@ func main() {
 			convertToCelsius(originValue)
 		}
 		fmt.Print("Would you like to convert another temperature ? (y/n) ")
-
+		fmt.Scanln(&shouldConvertAgain)
 		if strings.ToUpper(strings.TrimSpace(shouldConvertAgain)) != "Y" {
 			_, err := fmt.Scanln(&shouldConvertAgain)
 			if err != nil {
